@@ -80,3 +80,10 @@ const RED = 0xFF0000;
 ```
 
 If you try to assign a value to a constant, you'll get a `TypeError`.
+
+## Data types
+
+-   Number
+-   String
+-   Boolean
+
