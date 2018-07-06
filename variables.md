@@ -8,7 +8,7 @@ All you need to know about variables in JavaScript.
 
 When you decalre a variable with the `var` keyword, its scope is global.
 
-```
+```javascript
 var myString = 'Foo';
 ```
 
@@ -17,7 +17,7 @@ JavaScript doesn't handle name collisions very elegantly, which can lead to conf
 In the following example, you might think that the second `var` defines a new variable
 scoped to the block it's in:
 
-```
+```javascript
 var x = 1;
 
 if(x === 1) {
@@ -43,14 +43,14 @@ assumes you're talking about the previous example.
 When you declare a variable with the `let` keyword, it is scoped to the block that it's
 decalred in.
 
-```
+```javascript
 let myString = 'Foo';
 ```
 
 If you use the same code used in the `var` example, but use `let` instead, you'll get
 different results:
 
-```
+```javascript
 let x = 1;
 
 if(x === 1) {
@@ -68,4 +68,15 @@ The output is:
 1
 ```
 
-###
+In case you're wondering, the scoped variable works the same way even if the outer variable
+is defined with `var`.
+
+### Using `const` for constants
+
+You can define a constant the same way you would a variable, but use the `const` keyword.
+
+```javascript
+const RED = 0xFF0000;
+```
+
+If you try to assign a value to a constant, you'll get a `TypeError`.
