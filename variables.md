@@ -83,7 +83,22 @@ If you try to assign a value to a constant, you'll get a `TypeError`.
 
 ## Data types
 
--   Number
--   String
--   Boolean
+Variables have types, but they are dynamic, meaning that you can reassign a variable to whatever type
+you need without any special syntax.
+
+The supported data types are:
+-   [Number](#numbers)
+-   [String](#strings)
+-   [Boolean](#booleans)
+-   [Function](#functions)
+-   [Object](#objects)
+-   [Undefined](#undefined)
+-   [Not a number (NaN)](#not-a-number)
+
+### Numbers
+
+There is only one numeric type in JavaScript: 64-bit floating point, but you can omit the decimal point
+and treat them as integers if you like.
+
+#### Numeric literals
 
