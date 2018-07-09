@@ -10,3 +10,11 @@ This is a set of documentation about programming in JavaScript. It is incomplete
 -   [Functions](functions.md)
 -   [Objects](objects.md)
 -   [Modules](modules.md)
+
+## Tips
+
+-   Because it's the language of the web, you can play around with JavaScript easily in your browser.
+    Here are some sites designed to help you play with code in the cloud:
+    -   [JSFiddle](https://jsfiddle.net/)
+    -   [JS Bin](http://jsbin.com)
+    -   [CodePen](https://codepen.io/)
