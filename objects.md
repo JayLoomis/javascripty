@@ -45,8 +45,8 @@ member at runtime.
 ## Methods
 
 Methods are just properties that are set to functions. In theory, you can use arrow functions,
-the function operator, or new-style method declaration. In practice, I've had a hard time getting
-arrow notation to work.
+the function operator, or new-style method declaration. In practice, it's easiest to use new-style
+method declaration for anything new.
 
 ### Getters and setters
 
@@ -59,11 +59,11 @@ const circle = {
   _radius: 0,
   
   // This method uses 'arrow notation'.
-  // Note, I have consistent problems getting this to work.
+
   circumference: () => {
-    return (this._radius * Math.PI * 2) ;
-  },
-      
+    // Have to use circle, not this to get the _radius, because of the arrow notation and scope.
+    return (circle._radius * Math.PI * 2) ;
+  },      
   
   // This method uses the function operator (anonymous function).
   diameter: function() {
