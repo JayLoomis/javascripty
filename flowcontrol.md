@@ -6,6 +6,24 @@ Everything you ever wanted to know about branching and looping in JavaScript.
 
 ### If statements
 
+```javascript
+const MONDAY = 0;
+const TUESDAY = 1;
+const WEDNESDAY = 2;
+const THURSDAY = 3;
+const FRIDAY = 4;
+const SATURDAY = 5;
+const SUNDAY = 6;
+
+if(day >= MONDAY && day <= FRIDAY) {
+  alarm = '6:00 am';
+} else if(day === SATURDAY) {
+  alarm = '7:00 am';
+} else if(day === SUNDAY) {
+  alarm = '6:30 am';
+}
+```
+
 ### Switch statements
 
 ```javascript
