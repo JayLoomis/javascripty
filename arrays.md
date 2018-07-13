@@ -23,3 +23,12 @@ let transformedArray = myArray.map(function(item) {
   return item * 7;
 });  
 ```
+
+```javascript
+let numbers = [548, 589, 305, 250, 963, 98, 650, 357, 583, 547,
+               189, 448, 31, 733, 294, 846, 803, 190, 640, 561];
+
+let bigNumbers = numbers.filter(function(number) {
+  return number >= 500;
+});
+```
