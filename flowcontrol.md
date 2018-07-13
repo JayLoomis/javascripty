@@ -68,3 +68,37 @@ let sideUp = COIN_SIDES[Math.floor(Math.random() * 2)];
 
 let message = sideUp === 'heads' ? 'Heads, I win!' : 'Tales, you lose!';
 ```
+
+## Looping
+
+### For loop
+
+C-style.
+
+```javascript
+let colors = ['red', 'green', 'blue'];
+
+for(let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+```
+
+The keywords `break` and `continue` are supported to jump out of the loop and jump to the next iteration
+respectively.
+
+### While loop
+
+```javascript
+let number = 100;
+
+while(number > 0) {
+  console.log(number);
+  number--;
+}
+```
+
+Be careful about infinite loops!
+
+### Iterators
+
+Arrays support a number of iterator methods. They are described with the array information.
