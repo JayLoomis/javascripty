@@ -88,3 +88,28 @@ const circle = {
   }
 };
 ```
+
+## Classes
+
+Classes are object templates.
+
+```javascript
+class Character {
+  constructor(name, player) {
+    this._name = name;
+    this._player = player;
+  }
+  
+  get name() {
+    return this._name;
+  }
+  
+  get player() {
+    retirn this._player;
+  }
+}
+```
+
+Notice how the class definition differs from object definition:
+-   Because you don't assign the object to a variable, there's no semicolon ending the definition.
+-   You don't need commas between the members of the class.
