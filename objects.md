@@ -113,3 +113,36 @@ class Character {
 Notice how the class definition differs from object definition:
 -   Because you don't assign the object to a variable, there's no semicolon ending the definition.
 -   You don't need commas between the members of the class.
+
+### Inheritance
+
+Use the `extends` keyword and a class name to inherit the members of that class in your new class.
+
+If you need to pass constructor arguments to the base class, use `super`.
+
+```javascript
+class CharacterDD5E extends Character {
+  constructor(name, player, race, class) {
+    super(name, player);
+    this._race = race;
+    this._class = class;
+    this._level = 1;
+  }
+  
+  get race() {
+    return this._race;
+  }
+  
+  get class() {
+    return this._class;
+  }
+  
+  get level() {
+    return this._level;
+  }
+}
+```
+
+### Static methods
+
+Static methods are called from the class directly, not from instances.
