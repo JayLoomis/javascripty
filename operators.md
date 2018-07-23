@@ -29,13 +29,22 @@ What symbols to use for actions involving two things in JavaScipt.
 
 ## Comparison operators
 
+| Operator | Description                                                 |
+| :------: | ----------------------------------------------------------- |
+| <        | True if left is less than right.                            |
+| >        | True if left is greater than right.                         |
+| <=       | True if left is less than or equal to right.                |
+| >=       | True if left is greater than or equal to right.             |
+| ==       | Attempts to convert types to match, then true if equal.     |
+| ===      | True if equal, no type conversion.                          |
+| !=       | Attempts to convert types to match, then true if not equal. |
+| !==      | True if not equal, no type conversion.                      |
+
+## Boolean operators
+
 | Operator | Description                                             |
 | :------: | ------------------------------------------------------- |
-| <        | True if left is less than right.                        |
-| >        | True if left is greater than right.                     |
-| <=       | True if left is less than or equal to right.            |
-| >=       | True if left is greater than or equal to right.         |
-| ==       | Attempts to convert types to match, then true if equal. |
-| ===      | True if equal, no type conversion.                      |
-
+| ||       |  OR&mdash;True if either is truthy.                     |
+| &&       |  AND&mdash;True if both are truthy.                     |
+| !        |  NOT&mdash;True is following argument is falsey.        |
 
