@@ -44,7 +44,7 @@ What symbols to use for actions involving two things in JavaScipt.
 
 | Operator | Description                                             |
 | :------: | ------------------------------------------------------- |
-| ||       |  OR&mdash;True if either is truthy.                     |
-| &&       |  AND&mdash;True if both are truthy.                     |
-| !        |  NOT&mdash;True is following argument is falsey.        |
+| `||`     |  OR&mdash;True if either is truthy.                     |
+| `&&`     |  AND&mdash;True if both are truthy.                     |
+| `!`      |  NOT&mdash;True is following argument is falsey.        |
 
