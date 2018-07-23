@@ -16,3 +16,26 @@ What symbols to use for actions involving two things in JavaScipt.
 | --       | Used with a single expression to decrement it by one.                                   |
 | -        | Used as a prefix to an expression to negate it (e.g. -(6 * 7) === -42).                 |
 | +        | Used as a prefix to an expression to convert it into a number.                          |
+
+## Assignment operators
+
+| Operator | Description                                                 |
+| :------: | ----------------------------------------------------------- |
+| =        | Assigns the value to the right to the variable on the left. |
+| +=       | Adds (or concatenates) the value to the variable.           |
+| -=       |                                                             |
+| *=       |                                                             |
+| /=       |                                                             |
+
+## Comparison operators
+
+| Operator | Description                                             |
+| :------: | ------------------------------------------------------- |
+| <        | True if left is less than right.                        |
+| >        | True if left is greater than right.                     |
+| <=       | True if left is less than or equal to right.            |
+| >=       | True if left is greater than or equal to right.         |
+| ==       | Attempts to convert types to match, then true if equal. |
+| ===      | True if equal, no type conversion.                      |
+
+
