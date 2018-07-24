@@ -10,6 +10,7 @@ This is a set of documentation about programming in JavaScript. It is incomplete
 -   [Functions](functions.md)
 -   [Objects](objects.md)
 -   [Modules](modules.md)
+-   [Compatibility](compatibility.md)
 
 ## Tips
 
