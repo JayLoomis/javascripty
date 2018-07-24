@@ -2,6 +2,8 @@
 
 This is a set of documentation about programming in JavaScript. It is incomplete and constantly evolving.
 
+Note: This project describes JavaScript ES6+.
+
 ## Contents
 
 -   [Variables](variables.md)
