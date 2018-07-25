@@ -24,3 +24,13 @@ Car.drive = 'front';
 module.exports = Car;
 ```
 
+## How to include a module in another code file
+
+You can use the `require` function to include your module in another JavaScript file:
+
+```javascript
+const Car = require('./car.js');
+
+console.log('The car is a ' + Car.year + ' ' + Car.make + ' ' + Car.model + ' with ' +
+            Car.drive + '-wheel drive.';
+```
