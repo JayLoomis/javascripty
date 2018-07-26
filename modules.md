@@ -58,6 +58,11 @@ export default Car;
 
 ## How to include a module in another code file
 
+As with defining modules, ES6 introduced new ways to import modules. The old and new are
+described in the following sections.
+
+### The old way
+
 You can use the `require` function to include your module in another JavaScript file:
 
 ```javascript
@@ -65,4 +70,12 @@ const Car = require('./car.js');
 
 console.log('The car is a ' + Car.year + ' ' + Car.make + ' ' + Car.model + ' with ' +
             Car.drive + '-wheel drive.';
+```
+
+### The new way
+
+Because you can define more than one module in a file, you can nowimport specific modules.
+
+```javascript
+import Car from './car.js';
 ```
