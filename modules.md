@@ -56,6 +56,26 @@ Car.drive = 'front';
 export default Car;
 ```
 
+More importantly, you can now export individual pieces of the file:
+
+```javascript
+let make = 'Mazda';
+let model = 'Protege';
+let year = '1999';
+let drive = 'front';
+
+export {make, model, year, drive};
+```
+
+You can even export variables as you define them:
+
+```javascript
+export let make = 'Mazda';
+export let model = 'Protege';
+export let year = '1999';
+export let drive = 'front';
+```
+
 ## How to include a module in another code file
 
 As with defining modules, ES6 introduced new ways to import modules. The old and new are
@@ -76,6 +96,17 @@ console.log('The car is a ' + Car.year + ' ' + Car.make + ' ' + Car.model + ' wi
 
 Because you can define more than one module in a file, you can nowimport specific modules.
 
+You can import a single item from a file:
+
 ```javascript
 import Car from './car'; // Note that you don't need the file extension (.js is implied).
+```
+
+You can also import multiple items (remember that everything is an object at some level,
+so even if you export/import a variable, it's an object):
+
+```javascript
+import {make, model, year} from './car'; // This would work with one of the versions of
+                                         //  the module definition that define variales
+                                         //  outside of an object.
 ```
