@@ -37,7 +37,7 @@ let Car = {}; // Not sure if/why this is still needed.
 module.exports = {
   engineSize: 1.6,
   topSpeed: 165  
-}
+};
 ```
 
 ### The new way
