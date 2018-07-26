@@ -77,5 +77,5 @@ console.log('The car is a ' + Car.year + ' ' + Car.make + ' ' + Car.model + ' wi
 Because you can define more than one module in a file, you can nowimport specific modules.
 
 ```javascript
-import Car from './car.js';
+import Car from './car'; // Note that you don't need the file extension (.js is implied).
 ```
