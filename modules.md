@@ -24,6 +24,18 @@ Car.drive = 'front';
 module.exports = Car;
 ```
 
+You can also export an anonymous object full of random stuff (it shouldn't be _random_,
+but it needn't be as tightly related as a well-designed object). Here's an example:
+
+```javascript
+let Car = {}; // Not sure if/why this is still needed.
+
+module.exports = {
+  engineSize: 1.6,
+  topSpeed: 165  
+}
+```
+
 ## How to include a module in another code file
 
 You can use the `require` function to include your module in another JavaScript file:
