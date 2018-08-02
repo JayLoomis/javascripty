@@ -30,4 +30,28 @@ If you don't return a value from a function, it returns `undefined`.
 -   There are no variable length arguments. You can implement the same functionality by passing an array
     or object.
 
+## Examples
 
+```javascript
+// A function with default parameter values
+function createRect(upperLeftX, upperLeftY, lowerRightX, lowerRightY) {
+  upperLeftX = upperLeftX || 0;
+  upperLeftY = upperLeftY || 0;
+  lowerRightX = lowerRightX || 100;
+  lowerRightY = lowerRightY || 100;
+  ...
+}
+```
+
+The previous example works well if you want to specify the origin coordinates and sometimes use default
+width and height:
+
+```javascript
+createRect(0, 0, 640, 480);
+
+// This is fine. It creates a rectangle with these coordinates: 0, 0, 100, 100.
+createRect(100, 200);
+
+// This is fine, but kind of a pain.
+createRect(null, null, 640, 480);
+```
