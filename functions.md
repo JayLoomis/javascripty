@@ -55,3 +55,32 @@ createRect(100, 200);
 // This is fine, but kind of a pain.
 createRect(null, null, 640, 480);
 ```
+
+An easier way to allow multiple configurations of parameters is to pass in an object:
+
+```javascript
+function createRect(rectParams) {
+  if(rectParams.upperLeftX) {
+    if(rectParams.upperLeftY) {
+      // Use the origin coordinates.
+    } else {
+      // Error condition: if you pass one coordinate for a point, you have to pass the other.
+    }
+  } else {
+    // Do whatever you're going to when the origin point is omitted.
+  }
+  
+  if(rectParams.lowerRightX) {
+    if(rectParams.lowerRightY) {
+      // Use the extent coordinates.
+    } else {
+      // Error condition: if you pass one coordinate for a point, you have to pass the other.
+    }
+  } else {
+    // Do whatever you're going to when the extent point is omitted.
+  }
+  
+  // To be complete, there should be checks for the Y coordinates to handle the case where a
+  //  Y is passed without the corresponding X. It's the same error condition used above.
+}
+```
