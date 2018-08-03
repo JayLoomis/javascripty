@@ -32,6 +32,8 @@ If you don't return a value from a function, it returns `undefined`.
 
 ## Examples
 
+### Example of default parameters
+
 ```javascript
 // A function with default parameter values
 function createRect(upperLeftX, upperLeftY, lowerRightX, lowerRightY) {
@@ -84,3 +86,31 @@ function createRect(rectParams) {
   //  Y is passed without the corresponding X. It's the same error condition used above.
 }
 ```
+
+### Example with a varibale number of parameters
+
+The only way to do this is with an array as a parameter:
+
+```javascript
+// This function takes an array of any number of numbers and returns their sum.
+function variableParams(numbersArray) {
+  let sum = 0;
+
+  numbersArray.forEach(function(number) {
+    sum += number;
+  });
+    
+  return sum;
+}
+  
+let myNumbers = [1, 2, 3, 4, 5];
+  
+let total = variableParams(myNumbers);
+  
+console.log(total); // Should output 15 to the console.
+```
+
+While this technique feels most logically appropriate for an indeterminate number of parameters
+of the same type, as in the example, there are plenty of cases where mixed types would make sense.
+For example, the canonical example of this in C is `printf`, where the first parameter includes
+all the information needed to anticipate what follows.
