@@ -113,4 +113,9 @@ console.log(total); // Should output 15 to the console.
 While this technique feels most logically appropriate for an indeterminate number of parameters
 of the same type, as in the example, there are plenty of cases where mixed types would make sense.
 For example, the canonical example of this in C is `printf`, where the first parameter includes
-all the information needed to anticipate what follows.
+all the information needed to anticipate what follows. Here's a format function like the one in
+Python:
+
+```javascript
+
+```
