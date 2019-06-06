@@ -22,7 +22,7 @@ If you don't return a value from a function, it returns `undefined`.
 -   Parameters must be given in the correct order.
 -   Numbers and strings are passed by value.
 -   Objects and arrays are passed by reference.
--   You can omit parameters, in which case, they are passed intot he function as `undefined`.
+-   You can omit parameters, in which case, they are passed to the function as `undefined`.
 -   You can't skip a parameter if you're providing a later parameter--you must explicitly pass `null`
     or some other value that makes sense.
 -   There are no default values for parameters. You can implement the same behavior by using the 
@@ -117,5 +117,11 @@ all the information needed to anticipate what follows. Here's a format function 
 Python:
 
 ```javascript
-
+// This function takes an array of values, where the first is a string template and the rest are
+//  items to plug into the template.
+// Example:
+//   myString = formatString("Last updated {}/{}/{}", 6, 6, 2019);
+function formatString(template, args) {
+  
+}
 ```
