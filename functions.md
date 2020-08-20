@@ -47,6 +47,7 @@ function accumulator(num) {
   // Every time the function is called, add the number to the total.
   accumulator.total += num;
 }
+```
 
 ## Examples
 
