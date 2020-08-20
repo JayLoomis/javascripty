@@ -32,11 +32,19 @@ If you don't return a value from a function, it returns `undefined`.
     
 ## Static variables
 
-A static variable is a variable defined in a function that retains its value across multiple
-calls to the function. JavaScript doesn't have a static keyword like C. Instead, because functions
-are objects, you can define a static varaible as a member variable of the function's class. It's
-good form to check whether the static function exists, especially because it gives you a reliable
-way to initialize it. Here's an example:
+A static variable is a variable that is allocated once, when the function is declared, and is kept
+for the duration of the function's life. This is in contrast to regular local variables defined in
+a function, which are allocated each time the function is called.
+
+The practical definition of a static variable is a variable that retains its value across all calls
+to the function. The simplest use of a static variable is to accumulate values for every call to the
+function.
+
+While JavaScript uses the `static` keyword for static methods in objects, it doesn't support its use
+for static variables in functions. However, because functions are objects in JavaScript, you can
+define a static varaible as a member variable of the function's class. It's good form to check whether
+the static function exists, especially because it gives you a reliable way to initialize it. Here's an
+example:
 
 ```javascript
 function accumulator(num) {
