@@ -29,6 +29,24 @@ If you don't return a value from a function, it returns `undefined`.
     assignment form of the OR operator.
 -   There are no variable length arguments. You can implement the same functionality by passing an array
     or object.
+    
+## Static variables
+
+A static variable is a variable defined in a function that retains its value across multiple
+calls to the function. JavaScript doesn't have a static keyword like C. Instead, because functions
+are objects, you can define a static varaible as a member variable of the function's class. It's
+good form to check whether the static function exists, especially because it gives you a reliable
+way to initialize it. Here's an example:
+
+```javascript
+function accumulator(num) {
+  // The first time the function is called, initialize a static variable.
+  if(typeof accumulator.total == 'undefined')
+    accumulator.total = 0;
+  
+  // Every time the function is called, add the number to the total.
+  accumulator.total += num;
+}
 
 ## Examples
 
@@ -51,7 +69,7 @@ width and height:
 ```javascript
 createRect(0, 0, 640, 480);
 
-// This is fine. It creates a rectangle with these coordinates: 0, 0, 100, 100.
+// This is fine. It creates a rectangle with these coordinates: 0, 0, 100, 200.
 createRect(100, 200);
 
 // This is fine, but kind of a pain.
